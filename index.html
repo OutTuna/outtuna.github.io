@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="hidden" id="content"></div>
+    <div class="scanlines"></div>
+    <div class="background-blur">
+      <button class="icon-button" id="reveal-button">
+        <img
+          src="images/Light_Switch.png"
+          alt="Start Filming"
+          class="button-image"
+        />
+      </button>
+    </div>
+    <div class="intro-wrap hidden">
+      <div class="audio-controls">
+        <button id="audioButton" class="mute-button">Play</button>
+      </div>
+      <audio id="audio-player" src="audio-files/rainfall.mp3" preload="auto"></audio>
+      <div class="noise"></div>
+      <div class="play" data-splitting>
+        REC
+        <div class="play-indicator"></div>
+      </div>
+      <div class="time" id="current-time">--:--</div>
+      <div class="recordSpeed">SLP 00:00:00</div>
+    </div>
+    <p class="copyright-text">@2025 FXCKDEATH && DIP$ETHHH LABEL</p>
+
+    <script src="script.js"></script>
+  </body>
+</html>
